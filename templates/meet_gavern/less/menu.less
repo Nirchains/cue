@@ -1,0 +1,224 @@
+/** 
+ *
+ * Template menu code
+ *
+ **/
+
+.gk-mainmenu-toggle {
+	float: right;
+	
+	a {
+		background: transparent url('../images/mobile_menu_btn.png') no-repeat 0 0;
+		display: block;
+		height: 30px;
+		margin-top: 5px;
+		/*text-indent: -9999px;
+		width: 30px;*/
+		background-position: right;
+		padding-right: 35px;
+		padding-top: 8px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.2*@baseBodyFontSize;
+	}
+}
+
+
+.gk-main-menu {
+	float: right;
+	position: relative;
+	height: auto;
+	display: block;
+    margin-top: -48px;
+	//border-bottom: 1px solid #ddd;
+	> ul {
+		margin: 0!important;
+		overflow: hidden;
+		clear: both;
+		
+		> li {
+			border: none;
+			float: left;
+			font-size: 1.1*@baseBodyFontSize;
+			line-height: 3*@baseBodyFontSize;
+			margin: 0;
+			text-align: left;
+			
+			> a {
+				color: @textcolor;
+				margin: 0;
+				padding: 0 20px;
+                //font-size: 1.1em;
+                letter-spacing: 1px;
+				.transition(color .3s ease-out);
+				
+				&:hover {
+					background: transparent;
+					color: @color1;
+				}
+			}
+		}
+        	
+		li.current > a,
+		li.active > a {
+			background: transparent!important;
+			color: @blueSjd !important;
+            border-bottom: 3px solid @blueSjd;
+		}
+		
+		> li.active,
+		> li:hover {
+			color: @color1;
+			
+			> a {
+				background: transparent;
+				color: @color1;
+			}
+			
+			li.current > a,
+			li.active > a {
+				background: transparent!important;
+				color: @color1!important;
+			}
+		}
+	}	
+	// Submenu
+	ul {
+		ul {
+			background: @lightcolor;
+			.border-radius(3px);
+			.box-shadow(0 0 6px @darkshadow);
+			display: block;
+			font-size: @baseBodyFontSize;
+			left: -9999px;
+			margin-top: 0px;
+			padding: 0!important;
+			position: absolute;
+			width: 200px;
+			z-index: 10;
+			
+			ul:before {
+				display: none;
+			}
+			
+			li {
+				border-top: 1px solid @lightgrey;
+				min-height: 22px;
+				.transition(background-color .3s ease-out);
+				
+				a {
+					color: @textcolor;
+					display: block;
+					line-height: 1.7*@baseBodyFontSize;
+					padding: 10px 15px;
+					
+					&:active,
+					&:focus,
+					&:hover {
+						color: @color1!important;
+						text-decoration: none;
+					}
+				}
+				
+				&:hover {
+					background: @lightgrey;
+				}
+			}
+			
+			li:first-child {
+				border-top: none;
+			}
+			
+			li:hover {
+				ul {
+					left: auto!important;
+				}
+				
+				a {
+					color: @color1!important;
+					text-decoration: none;	
+				}
+			}
+			
+			ul {
+				border-top: 1px solid @lightgrey;
+				left: -9999px!important;
+				margin-left: 180px;
+				margin-top: -24px;
+			}
+		}
+		
+		ul:before {
+			/*background: transparent url('../images/menu_arrow.png') no-repeat 0 0;*/
+			content: "";
+			display: block;
+			height: 10px;
+			left: 26px;
+			position: absolute;
+			top: -10px;
+			width: 14px;
+		}
+		
+		li:hover{
+			ul {
+				left: auto;
+			}
+		}
+	} 
+}
+
+//PFG
+footer .gk-footer-menu { 
+    ul {
+        li {
+            a {
+                padding: 5px 10px;
+                .transition(all .3s ease-out);
+                .border-radius(5px);
+            }
+        }
+        li.current > a,
+		li.active > a {
+			color: @blueSjd !important;
+		}
+    }
+}
+
+@media (max-width: 1060px) {
+	.gk-main-menu {
+		> ul {
+			> li {
+				> a {
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+    h1.logo-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 979px) {
+    #bar-red {
+        clear: both;   
+    }
+}
+@media  (max-width: 600px) {
+    #gk-logo img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+    h1.logo-text {
+        line-height: 30px;
+    }
+    .logo-sjd {
+        padding-right: 0;
+    }
+    .box {
+        width: 100% !important;
+    }
+}

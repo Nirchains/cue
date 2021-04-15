@@ -1,0 +1,45 @@
+/* 
+    Document   : jevcustom
+    Created on : 22-Apr-2013, 14:12:51
+    Author     : Tony Partridge - GWE Systems Ltd
+    Description: To allow customisation of CSS Strings where they can never be lost.
+    Purpose of the stylesheet follows.
+*/
+
+table.ev_table
+{
+  border:0px !important;
+  font-family: 'Open Sans Condensed', Arial, sans-serif !important;
+}
+table.ev_table td
+{
+  font-size: 16px !important;
+}
+table.ev_navtable,div#cal_title {
+   display:none;
+}
+td.ev_td_right {
+ border:0px !important;
+}
+td.cal_td_daysnames, td.ev_td_left{ display:none !important;}
+li.ev_td_li {border:0px !important;}
+
+table.ev_table tbody tr:nth-child(odd) > td {background-color:#fff !important}
+table.contentpaneopen  tbody tr:nth-child(odd) > td {background-color:#fff !important}
+table.contentpaneopen  tbody tr td.ev_detail  {border-left:4px solid #bbb !important;}
+
+table.ev_table h1 {line-height:30px !important; margin-top:0px !important;margin-bottom:5px !important;}
+table.ev_table h1 a {font-size:24px !important; font-family: 'Open Sans Condensed', Arial, sans-serif !important; color:#C40722 !important; }
+table.mod_events_latest_table tbody tr:nth-child(odd) > td
+{
+ background-color:white !important;
+}
+td[class^="dashday"] { background-color:#000 !important}
+th[class^="dashday"] { color:#000 !important}
+/***************************MODULO ULTIMOS EVENTOS****************************/
+td.mod_events_latest_first, td.mod_events_latest {border-width:0px 0px 1px 0px !important; border-color:#ddd !important}
+/******************/
+#jevents_header > h2.contentheading
+{
+color:#C40722;
+}

@@ -1,0 +1,326 @@
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* The element to apply the animation to */
+
+.box,
+#gk-content {
+    -webkit-animation: show 0.6s ease-in;
+    /* Safari 4+ */
+    -moz-animation: show 0.6s ease-in;
+    /* Fx 5+ */
+    -o-animation: show 0.6s ease-in;
+    /* Opera 12+ */
+    animation: show 0.6s ease-in;
+    /* IE 10+, Fx 29+ */
+}
+
+#gk-mainbody-bottom {
+    clear: left;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+}
+
+.link-icon {
+    /*border-left: 2px solid #C40722;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.link-icon .link-icon-content {
+    font-size: 1.1em;
+    min-height: 80px;
+    border-left: 4px solid #C59D56;
+    text-align: left;
+}
+
+.link-icon .link-icon-content:hover {
+    border-left-color: #C40722;
+    -webkit-transition: border 200ms ease-in;
+    -moz-transition: border 200ms ease-in;
+    -o-transition: border 200ms ease-in;
+    transition: border 200ms ease-in;
+}
+
+.link-icon .link-icon-content a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.link-icon .link-icon-content a:hover {
+    color: #c40722;
+    -webkit-transition: color 200ms ease-in;
+    -moz-transition: color 200ms ease-in;
+    -ms-transition: color 200ms ease-in;
+    -o-transition: color 200ms ease-in;
+    transition: color 200ms ease-in;
+}
+
+.link-icon .link-icon-content a span {
+    padding: 10px;
+    display: inline-block;
+}
+
+#gk-main {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.controls .modal {
+    position: inherit;
+    float: left;
+}
+
+.subheading-category,
+.blog .page-header h1 {
+    font-weight: 400;
+}
+
+.gk-article {
+    .pull-left {
+        img {
+            padding-right: 15px;
+            padding-top: 10px;
+        }
+    }
+}
+
+.organigrama {
+    .blue {
+        box-shadow: 2px 2px 2px #aaa;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+    p,
+    h3 {
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+}
+
+.contacto {
+    h3:first-of-type {
+        display: none;
+    }
+}
+
+.pantalla-dividida {
+    ul {
+        li {
+            text-align: left;
+        }
+    }
+}
+
+.gk-article {
+    ul {
+        list-style-type: square;
+        display: inline-block;
+    }
+    ul.actions {
+        list-style: outside none none;
+        li {
+            float: left;
+            a {
+                clear: both;
+                color: #333;
+                display: block;
+                font-weight: normal;
+                line-height: 18px;
+                padding: 3px 20px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.img-intro-left,
+.img-intro-none {
+    margin-left: 0 !important;
+}
+
+.margin-right-15 {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.create,
+.published {
+    display: none;
+}
+
+.article-info dd {
+    padding-top: 4px;
+}
+
+//
+// Thumbnails
+// --------------------------------------------------
+// Note: `.thumbnails` and `.thumbnails > li` are overriden in responsive files
+// Make wrapper ul behave like the grid
+.thumbnails {
+    margin-left: -20px;
+    list-style: none;
+    //.clearfix();
+}
+
+// Fluid rows have no left margin
+.row-fluid .thumbnails {
+    margin-left: 0;
+}
+
+// Float li to make thumbnails appear in a row
+.thumbnails > li {
+    float: left; // Explicity set the float since we don't require .span* classes
+    margin-bottom: 18px;
+    margin-left: 20px;
+}
+
+// The actual thumbnail (can be `a` or `div`)
+.thumbnail {
+    display: block;
+    padding: 4px;
+    line-height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .055);
+}
+
+// Add a hover/focus state for linked versions only
+a.thumbnail:hover,
+a.thumbnail:focus {
+    //border-color: @linkColor;
+    box-shadow: 0 1px 4px rgba(0, 105, 214, .25);
+}
+
+// Images and captions
+.thumbnail > img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+    color: #666;
+}
+
+.gk-mainmenu-toggle {
+    position: inherit;
+}
+
+@media (max-width: 1024px) {
+    #bar-red {
+        clear: right;
+        #google_translate_element {
+            clear: right;
+        }
+        .bar-red {
+            padding-top: 0px;
+            clear: right;
+        }
+    }
+    .gk-main-menu > ul li.current > a, .gk-main-menu > ul li.active > a {
+        border-bottom-width: 0;
+    }
+}
+
+.ult-noticias li {
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .camera_caption > div {
+        padding: 5px 20px;
+        p {
+            //white-space: nowrap;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 20px;
+            height: 40px;
+        }
+        .slide-title {
+            font-size: 20px;
+        }
+    }
+    .camera_wrap .camera_pag .camera_pag_ul li > span,
+    .camera_wrap .camera_pag .camera_pag_ul li {
+        width: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.logo-text .text-1 {
+        font-size: 0.6em;
+    }
+    .logo-us {
+        padding-left: 10px;
+    }
+    #gk-logo img {
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 340px) {
+    h1.logo-text .text-1 {
+        font-size: 0.6em;
+    }
+    .logo-us {
+        padding-left: 10px;
+    }
+    #gk-logo img {
+        max-width: 40px;
+    }
+}
+
+.gk-article .article-header {
+margin-top:15px;
+}
+div.arbolcontenidos li.active > ul.nav-child > li.active > ul.nav-child > li.active > 
+ul.nav-child > li.active > ul.nav-child > li > a {
+    padding-left: 75px;
+}
+.directorio ul {
+}
+.directorio ul li {
+float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid #24A4D3;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.directorio ul li a {
+display: block;
+width: 100%;
+height: 100%;
+}
+.box ul li {
+    margin-left: 10px;
+text-align: left;
+}
+.asignaturas .field-label {
+
+}
+.asignaturas .field-value {
+    float: left;
+    width: 100%;
+}
+.field-label {
+font-weight: bold;
+}
+.tags {
+float: right;
+}

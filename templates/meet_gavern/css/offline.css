@@ -1,0 +1,144 @@
+body {
+  color: #777;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0 20px;
+}
+a {
+  color: #C40722;
+  outline: none !important;
+  text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+  color: #007F86;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  color: #444;
+  font-family: 'Colaborate', sans-serif;
+  font-weight: 500;
+}
+#gk-logo.css-logo {
+  background: transparent url('../images/logo.png') no-repeat 0 0;
+  display: block;
+  height: 67px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 188px;
+}
+#gk-logo.text-logo span {
+  display: block;
+  font-size: 24.05px;
+  line-height: 24.05px;
+  padding: 10px 0 0 0;
+}
+#gk-logo.text-logo small {
+  display: block;
+  font-size: 11.96px;
+  line-height: 12px;
+  padding: 0 0 10px 0;
+}
+#gk-image-text {
+  margin-left: 30px;
+  width: 80%;
+}
+#gk-image-text #gk-logo {
+  width: 100%;
+}
+#gk-image-text .logo-img {
+  float: left;
+  padding-right: 20px;
+}
+#gk-image-text h1.logo-text {
+  text-align: left;
+  display: block;
+  font-size: 34.45px;
+  line-height: 39px;
+  padding: 0;
+  font-weight: bold;
+}
+#gk-image-text h1.logo-text .text-1 {
+  color: #C40722;
+}
+#gk-image-text h1.logo-text .text-2 {
+  color: #BE9D56;
+}
+#gk-image-text h1.logo-text .text-gris {
+  color: #666666;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+.nav-top {
+  height: 32px;
+  background: #be9d56;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYmU5ZDU2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTQlIiBzdG9wLWNvbG9yPSIjYmU5ZDU2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjYzQwNzIyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M0MDcyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(45deg,#be9d56 0%,#be9d56 14%,#ffffff 14%,#ffffff 20%,#c40722 20%,#c40722 100%);
+  background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#be9d56),color-stop(14%,#be9d56),color-stop(14%,#ffffff),color-stop(20%,#ffffff),color-stop(20%,#c40722),color-stop(100%,#c40722));
+  background: -webkit-linear-gradient(45deg,#be9d56 0%,#be9d56 14%,#ffffff 14%,#ffffff 20%,#c40722 20%,#c40722 100%);
+  background: -o-linear-gradient(45deg,#be9d56 0%,#be9d56 14%,#ffffff 14%,#ffffff 20%,#c40722 20%,#c40722 100%);
+  background: -ms-linear-gradient(45deg,#be9d56 0%,#be9d56 14%,#ffffff 14%,#ffffff 20%,#c40722 20%,#c40722 100%);
+  background: linear-gradient(45deg,#be9d56 0%,#be9d56 14%,#ffffff 14%,#ffffff 20%,#c40722 20%,#c40722 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#be9d56',endColorstr='#c40722',GradientType=1);
+}
+.header {
+  display: block;
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+#bar-red {
+  position: absolute;
+  width: 100%;
+}
+#bar-red .bar-red {
+  margin-right: 40px;
+  float: right;
+  padding-top: 2px;
+}
+@media (max-width: 1250px) {
+  #gk-image-text {
+    margin-left: 20px;
+  }
+  #gk-image-text #gk-logo {
+    width: 100%;
+  }
+  #gk-image-text .logo-img {
+    padding-right: 15px;
+  }
+  #gk-image-text h1.logo-text {
+    font-size: 26px;
+    line-height: 29.9px;
+    padding: 10px 0 0 0;
+  }
+}
+h2 {
+  color: #C40722;
+  font-size: 28px;
+  margin: 32px 0;
+}
+h3 {
+  font-weight: 300;
+  margin: 0;
+}
+#frame {
+  text-align: center;
+}
+#errorDescription {
+  margin: 50px 0 24px;
+}
+#errorboxbody {
+  width: 300px;
+  margin: 0 auto;
+  padding: 9px 0;
+  border-top: 1px solid #e5e5e5;
+}
+#form-login {
+  margin: 0 auto;
+  max-width: 480px;
+}

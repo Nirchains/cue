@@ -1,0 +1,124 @@
+// CSS code for the logo - used in:
+// * template.less, 
+// * error.less,
+// * offline.less
+
+// logomargin mixin
+.logomargin() when (@page = 'offline') {
+	margin: 0 auto;
+}
+
+.logomargin() when (@page = 'normal') {
+	margin: 0;
+}
+
+#gk-logo.css-logo {
+	background: transparent url('../images/logo.png') no-repeat 0 0;
+	display: block;
+	height: 67px;
+	.logomargin;
+	text-indent: -9999px;
+	width: 188px;
+}
+
+#gk-logo.text-logo {
+	span {
+		display: block;
+		font-size: 1.85*@baseBodyFontSize;
+		line-height: 1.85*@baseBodyFontSize;
+		padding: 10px 0 0 0;
+	}
+	small {
+		display: block;
+		font-size: 0.92*@baseBodyFontSize;
+		line-height: 12px;
+		padding: 0 0 10px 0;
+	}
+}
+
+	#gk-logo {
+		
+	}
+	.logo-sjd {
+        float: left;
+        padding-right: 10px;
+        padding-top: 10px;
+        img {
+        }
+	}
+    .logo-us {
+        float: left;
+        padding-left: 20px;
+        padding-top: 10px;
+        img {
+        }
+	}
+	h1.logo-text {
+        text-align: center;
+        float: left;
+			display: block;
+			font-size: 2.15*@baseBodyFontSize;
+			line-height: 2.5*@baseBodyFontSize;
+			padding: 0;
+			font-weight: bold;
+			&:hover {
+			}
+			.text-1 {
+				color: @usOrangeText;
+                font-size: 0.8em;
+			}
+			.text-2 {
+				color: @blueSjd;
+                font-size: 0.9em;
+                border-bottom: 1px solid #999;
+                letter-spacing: 3px;
+			}
+            .text-3 {
+				color: #666666;
+                font-size: 0.7em;
+			}
+			.text-gris {
+				color: #666666;
+				font-weight: normal;
+				font-size: 0.9em;
+			}
+	}
+	
+
+.nav-top {
+	height: 30px;
+}
+
+.header {
+	display: block;
+	content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+#bar-red {
+	
+	.bar-red {
+		float: right;	
+		padding-top: 5px;
+        form {
+            margin: 0;
+        }
+	}
+}
+@media (max-width: 1250px) {
+	#gk-image-text {
+		margin-left: 20px;
+		#gk-logo {
+			width: 100%;
+		}
+		.logo-sjd {
+				padding-right: 15px;
+		}
+		h1.logo-text {
+			font-size: 2*@baseBodyFontSize;
+			line-height: 2.3*@baseBodyFontSize;
+			padding: 10px 0 0 0;
+		}
+	}
+}

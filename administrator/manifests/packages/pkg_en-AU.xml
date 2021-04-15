@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3">
+	<name>English en-AU Language Pack</name>
+	<packagename>en-AU</packagename>
+	<version>3.3.1.1</version>
+	<creationDate>2014-6-12</creationDate>
+	<author>Stevec4 - Australia</author>
+	<authorEmail>admin@aussiesrus.com.au</authorEmail>
+	<authorUrl>www.aussiesrus.com.au</authorUrl>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+<description>3.3.1.1 Joomla! English (Australia) Language Package</description>
+<files>
+        <file type="language" client="administrator" id="en-AU">admin_en-AU.zip</file>
+        <file type="language" client="site" id="en-AU">site_en-AU.zip</file>
+</files>
+<updateservers>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+    </updateservers>
+</extension>
