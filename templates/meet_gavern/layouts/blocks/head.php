@@ -15,6 +15,8 @@ $this->API->addCSS($this->API->URLtemplate().'/bootstrap/output/bootstrap.css');
 $this->API->addCSS($this->API->URLtemplate().'/bootstrap/output/bootstrap-responsive.css');
 $this->API->addCSS($this->API->URLtemplate().'/css/template.css');
 $this->API->addCSS($this->API->URLtemplate() . '/css/font-awesome.css');
+$this->API->addCSS($this->API->URLtemplate() . '/css/all.css');
+
 // generate the max-width rules
 $this->API->addCSSRule('.container-fluid { max-width: '.$this->API->get('max_page_width', '1200').'px!important; }');
 // generate the submenu width

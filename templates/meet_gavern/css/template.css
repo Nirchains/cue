@@ -298,6 +298,9 @@ div.arbolcontenidos li.active > ul.nav-child > li.active > ul.nav-child > li > a
 div.arbolcontenidos li.active > ul.nav-child > li.active > ul.nav-child > li.active > ul.nav-child > li > a {
   padding-left: 60px;
 }
+div.arbolcontenidos li.active > ul.nav-child > li.active > ul.nav-child > li.active > ul.nav-child > li > a > ul.nav-child > li > a {
+  padding-left: 70px;
+}
 div.arbolcontenidos li.active > ul.nav-child > li.active > a {
   color: #24A4D3 !important;
   border-right: 2px solid #24A4D3;
@@ -541,7 +544,8 @@ div.arbolcontenidos li.active > ul.nav-child > li.active > ul.nav-child > li.act
 .gk-twitter-icon,
 .gk-gplus-icon,
 .gk-youtube-icon,
-.gk-rss-icon {
+.gk-rss-icon,
+.gk-instagram {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -563,8 +567,12 @@ div.arbolcontenidos li.active > ul.nav-child > li.active > ul.nav-child > li.act
 .gk-twitter-icon:hover,
 .gk-gplus-icon:hover,
 .gk-youtube-icon:hover,
-.gk-rss-icon:hover {
+.gk-rss-icon:hover,
+.gk-instagram:hover {
   background-color: #eeeeee;
+}
+.gk-instagram-icon {
+  background-image: url('../images/social/instagram.png');
 }
 .gk-facebook-icon {
   background-image: url('../images/social/facebook.png');
@@ -1666,6 +1674,183 @@ ul.the-icons li:hover i {
   margin-right: 12px;
   margin-left: -4px;
 }
+ul {
+  list-style-image: url("../images/vigneting-xs.jpg");
+}
+.pull-right ul.actions {
+  list-style: none;
+  text-align: right;
+}
+body > header {
+  padding-bottom: 0px;
+}
+.accordion .accordion-heading {
+  margin-top: 5px;
+  padding: 0;
+  border-radius: .25rem;
+  border-bottom: 0;
+  margin: -1px;
+}
+.accordion .accordion-heading a {
+  color: #0088CC;
+  cursor: pointer;
+  display: block;
+  padding: 10px 40px 10px 20px;
+  font-weight: bold;
+}
+.accordion .accordion-heading a:hover {
+  text-decoration: none;
+}
+.accordion .accordion-heading a:focus {
+  text-decoration: none;
+}
+.accordion .accordion-heading a [class^="icon-"] {
+  margin-right: 4px;
+  position: relative;
+  top: 1px;
+}
+.accordion .accordion-heading a [class*="fa-"] {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+.accordion .accordion-heading a .icons {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+  top: 1px;
+}
+.accordion .accordion-heading:first-child {
+  margin-top: 0;
+}
+.accordion .accordion-heading:first-of-type {
+  border: 1px solid rgba(0,0,0,0.125);
+  border-radius: .25rem;
+}
+.accordion .accordion-heading:not(:first-of-type):not(:last-of-type) {
+  border: 1px solid rgba(0,0,0,0.125);
+  border-radius: .25rem;
+}
+.accordion .accordion-heading:not(:first-of-type) .accordion-heading:first-child {
+  border-radius: .25rem;
+}
+.accordion .accordion-heading:last-of-type {
+  border: 1px solid rgba(0,0,0,0.125);
+  border-radius: .25rem;
+}
+.accordion .accordion-group {
+  margin-top: 7px;
+}
+html .accordion.accordion-primary .accordion-heading {
+  background-color: #0088CC !important;
+}
+html .accordion.accordion-primary .accordion-heading a {
+  color: #FFF;
+}
+html .accordion.accordion-secondary .accordion-heading {
+  background-color: #e36159 !important;
+}
+html .accordion.accordion-secondary .accordion-heading a {
+  color: #FFF;
+}
+html .accordion.accordion-tertiary .accordion-heading {
+  background-color: #2BAAB1 !important;
+}
+html .accordion.accordion-tertiary .accordion-heading a {
+  color: #FFF;
+}
+html .accordion.accordion-quaternary .accordion-heading {
+  background-color: #383f48 !important;
+}
+html .accordion.accordion-quaternary .accordion-heading a {
+  color: #FFF;
+}
+html .accordion.accordion-dark .accordion-heading {
+  background-color: #212529 !important;
+}
+html .accordion.accordion-dark .accordion-heading a {
+  color: #FFF;
+}
+html .accordion.accordion-light .accordion-heading {
+  background-color: #FFF !important;
+}
+html .accordion.accordion-light .accordion-heading a {
+  color: #777;
+}
+.accordion.accordion-sm .accordion-heading a {
+  padding: 5px 15px;
+  font-size: 0.9em;
+}
+.accordion.accordion-sm .accordion-body {
+  font-size: 0.9em;
+}
+.accordion.accordion-lg .accordion-heading a {
+  padding: 15px 15px;
+  font-size: 1em;
+  font-weight: 600;
+}
+.accordion.without-bg .accordion-heading {
+  background: transparent !important;
+}
+.accordion.without-bg .accordion-heading >.accordion-heading {
+  background: transparent !important;
+}
+.accordion.without-bg .accordion-body {
+  padding-top: 0;
+}
+.accordion.without-borders .accordion-heading {
+  border: 0 !important;
+  box-shadow: none;
+  border-radius: 0;
+}
+.accordion.without-borders .accordion-heading a {
+  padding-left: 0;
+  padding-right: 0;
+}
+.accordion.without-borders .accordion-body {
+  padding: 0;
+}
+.accordion.accordion-modern .accordion-group {
+  border: 4px solid #F7F7F7;
+}
+.accordion.accordion-modern .accordion-group:first-of-type {
+  border: 4px solid #F7F7F7;
+}
+.accordion.accordion-modern .caaccordion-headingrd:not(:first-of-type):not(:last-of-type) {
+  border: 4px solid #F7F7F7;
+}
+.accordion.accordion-modern .accordion-heading {
+  background-color: #F7F7F7;
+  border-radius: 0;
+  border-width: 0px;
+}
+.accordion.accordion-modern-grey-scale-1 .accordion-heading {
+  background-color: #EDEDED;
+}
+.accordion.accordion-modern-grey-scale-1 .accordion-heading:first-of-type {
+  border-color: #EDEDED;
+}
+.accordion.accordion-modern-grey-scale-1 .accordion-heading:not(:first-of-type):not(:last-of-type) {
+  border-color: #EDEDED;
+}
+.accordion.accordion-modern-grey-scale-1 .accordion-heading:last-of-type {
+  border-color: #EDEDED;
+}
+.accordion-inner {
+  padding: 9px 15px;
+  border-top-width: 0px;
+}
+.accordion-toggle::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f068";
+  position: absolute;
+  right: 20px;
+}
+.accordion-toggle.collapsed::before {
+  content: "\f067";
+}
 label[for="mod-search-searchword"] {
   display: none;
 }
@@ -2072,9 +2257,6 @@ aside .dropdown-menu {
     clear: both;
     content: "";
     display: block;
-  }
-  [class*="span"]:first-child {
-    margin-top: 0;
   }
   .row-fluid .span3,
   .row-fluid .span3 {
